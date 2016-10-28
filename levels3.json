@@ -1,0 +1,120 @@
+[{
+    "label": "III IN A ROW",
+    "objects": [
+      {
+        "type": "cross",
+        "x": -50,
+        "y": -50
+      },
+      {
+        "type": "cross",
+        "x": 0,
+        "y": -50
+      },
+      {
+        "type": "cross",
+        "x": 50,
+        "y": -50
+      },
+      {
+        "type": "cross",
+        "x": -50,
+        "y": 0
+      },
+      {
+        "type": "cross",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "type": "cross",
+        "x": 50,
+        "y": 0
+      },
+      {
+        "type": "cross",
+        "x": -50,
+        "y": 50
+      },
+      {
+        "type": "cross",
+        "x": 0,
+        "y": 50
+      },
+      {
+        "type": "cross",
+        "x": 50,
+        "y": 50
+      }
+    ],
+    "steps": 2,
+    "intersections": 5,
+    "buttons": "R",
+    "hints": {
+      "en": [
+        {
+          "label": "LINES",
+          "text": "Do not lose not one who knows all the options of victory, but the one who knows all the options defeat. — <i>Haroun Agatsarsky</i>"
+        }
+      ],
+      "ru": [
+        {
+          "label": "LINES",
+          "text": "Не проигрывает не тот, кто знает все варианты победы, а тот, кто знает все варианты поражения. — <i>Гарун Агацарский</i>"
+        }
+      ]
+    }
+  },
+  {
+    "label": "CONIUNCTIS",
+    "objects": [
+      {
+        "type": "cross",
+        "x": 250,
+        "y": -125
+      },
+      {
+        "type": "cross",
+        "x": -250,
+        "y": -125
+      },
+      {
+        "type": "cross",
+        "x": -312.5,
+        "y": -25
+      },
+      {
+        "type": "cross",
+        "x": 312.5,
+        "y": -25
+      }
+    ],
+    "steps": 3,
+    "intersections": 4,
+    "areas": [
+      {
+        "x": -200,
+        "w": 400,
+        "y": -200,
+        "h": 400,
+        "type": "touch"
+      }
+    ],
+    "buttons": "R",
+
+    "hints": {
+      "ru": [
+        {
+          "label": "LINES",
+          "text": "Если бы отрезок не считал себя бесконечной прямой, он вряд ли бы дотянул от одной до другой точки — <i>Феликс Кривин</i>"
+        }
+      ],
+      "en": [
+        {
+          "label": "LINES",
+          "text": "If the line segment is not considered himself an infinite straight line, he is unlikely to reach from one to another point — <i>Felix Krivine</i>"
+        }
+      ]
+    }
+  }
+]

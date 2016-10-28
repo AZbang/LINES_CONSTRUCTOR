@@ -3,8 +3,10 @@
 __*LINES*__ —  is a puzzle game in which you have to use logic and skill to solve problems without knowing the goal.
 In this game no one will not tell you how and what to do, and it is in such a helpless player will have is, solving puzzles and reading the arguments of famous personalities who may be the only one to help him ...
 
+#Links (LINES 2.0)
+* In Development... (Google Play)
 
-#Links
+#Links (LINES 1.0)
 * Play on GameJolt -- [LINES](http://gamejolt.com/games/lines/134288)
 * Passage of all levels of puzzle LINES! --  [VIDEO](https://www.youtube.com/watch?v=d5xaHRqhfEY)
 * Let's play LINES -- [VIDEO](https://www.youtube.com/watch?v=d4JJtoGuJUs&index=1&list=LLIlJYRMckJBG75LUR8m7K-g)
