@@ -1,69 +1,5 @@
 [
   {
-    "label": "NEW LEVEL",
-    "objects": [
-      {
-        "type": "cross",
-        "x": 0,
-        "y": 0
-      },
-      {
-        "type": "bad",
-        "x": -150,
-        "y": 150        
-      },
-      {
-        "type": "bad",
-        "x": -150,
-        "y": -150        
-      },
-      {
-        "type": "bad",
-        "x": 150,
-        "y": -150        
-      },
-      {
-        "type": "bad",
-        "x": 150,
-        "y": 150        
-      }
-    ],
-    "areas": [
-      {
-        "type": "untouch",
-        "x": -200,
-        "y": -200,
-        "w": 400,
-        "h": 400
-      }
-    ],
-    "steps": 5,
-    "intersections": 10,
-    "buttons": "R",
-    "hints": {
-      "ru": [
-        {
-          "label": "LINES",
-          "text": "В живописи, как и в морали, главное состоит в том, чтобы в нужном месте провести линию — <i>Гилберт Кит Честертон</i>"
-        },
-        {
-          "label": "INFO",
-          "text": "Чтобы перезагрузить игру, нажмите R"
-        }
-      ],
-      "en": [
-        {
-          "label": "LINES",
-          "text": "Art, like morality, consists in drawing the line somewhere. — <i>Gilbert Keith Chesterton</i>"
-        },
-        {
-          "label": "INFO",
-          "text": "To reset the game, press R"
-        }
-      ]
-    }  
-  },  
-  {
     "label": "EASY",
     "objects": [
       {
@@ -79,7 +15,7 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "В живописи, как и в морали, главное состоит в том, чтобы в нужном месте провести линию — <i>Гилберт Кит Честертон</i>"
+          "text": "В живописи, как и в морали, главное состоит в том, чтобы в нужном месте провести линию — Гилберт Кит Честертон"
         },
         {
           "label": "INFO",
@@ -89,7 +25,7 @@
       "en": [
         {
           "label": "LINES",
-          "text": "Art, like morality, consists in drawing the line somewhere. — <i>Gilbert Keith Chesterton</i>"
+          "text": "Art, like morality, consists in drawing the line somewhere. — Gilbert Keith Chesterton"
         },
         {
           "label": "INFO",
@@ -129,13 +65,13 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "Конец уже содержится в начале. — <i>Джордж Оруэлл. 1984</i>"          
+          "text": "Конец уже содержится в начале. — Джордж Оруэлл. 1984"          
         }
       ],
       "en": [
         {
           "label": "LINES",
-          "text": "The end is already contained in the beginning. - <i>George Orwell. 1984</i>"
+          "text": "The end is already contained in the beginning. - George Orwell. 1984"
         }
       ]
     }
@@ -253,13 +189,13 @@
       "en": [
         {
           "label": "LINES",
-          "text": "Do not lose not one who knows all the options of victory, but the one who knows all the options defeat. — <i>Haroun Agatsarsky</i>"
+          "text": "Do not lose not one who knows all the options of victory, but the one who knows all the options defeat. — Haroun Agatsarsky"
         }
       ],
       "ru": [
         {
           "label": "LINES",
-          "text": "Не проигрывает не тот, кто знает все варианты победы, а тот, кто знает все варианты поражения. — <i>Гарун Агацарский</i>"
+          "text": "Не проигрывает не тот, кто знает все варианты победы, а тот, кто знает все варианты поражения. — Гарун Агацарский"
         }
       ]
     }
@@ -305,13 +241,13 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "Если бы отрезок не считал себя бесконечной прямой, он вряд ли бы дотянул от одной до другой точки — <i>Феликс Кривин</i>"
+          "text": "Если бы отрезок не считал себя бесконечной прямой, он вряд ли бы дотянул от одной до другой точки — Феликс Кривин"
         }
       ],
       "en": [
         {
           "label": "LINES",
-          "text": "If the line segment is not considered himself an infinite straight line, he is unlikely to reach from one to another point — <i>Felix Krivine</i>"
+          "text": "If the line segment is not considered himself an infinite straight line, he is unlikely to reach from one to another point — Felix Krivine"
         }
       ]
     }
@@ -376,13 +312,13 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "Начиная с определенной точки, возврат уже невозможен. Этой точки надо достичь. — <i>Франц Кафка</i>"
+          "text": "Начиная с определенной точки, возврат уже невозможен. Этой точки надо достичь. — Франц Кафка"
         }
       ],
       "en": [
         {
           "label": "LINES",
-          "text": "There is a point of no return. This point has to be reached. — <i>Franz Kafka</i>"
+          "text": "There is a point of no return. This point has to be reached. — Franz Kafka"
         }
       ]
     }
@@ -437,7 +373,7 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "Когда пора возвращаться, судьба найдет способ тебя вернуть. — <i>Сара Джио. Фиалки в марте</i>"
+          "text": "Когда пора возвращаться, судьба найдет способ тебя вернуть. — Сара Джио. Фиалки в марте"
         },
         {
           "label": "INFO",
@@ -447,7 +383,7 @@
       "en": [
         {
           "label": "LINES",
-          "text": "Fate has a way of bringing you back when it's time to come back — <i>Sarah Jio. The Violets of March</i>"
+          "text": "Fate has a way of bringing you back when it's time to come back — Sarah Jio. The Violets of March"
         },
         {
           "label": "INFO",
@@ -579,13 +515,13 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "Мы не отступаем — мы идем в другом направлении. — <i>Дуглас Макартур</i>"
+          "text": "Мы не отступаем — мы идем в другом направлении. — Дуглас Макартур"
         }
       ],
       "en": [
         {
           "label": "LINES",
-          "text": "We are not retreating - we are going in the other direction — <i>Douglas MacArthur</i>"
+          "text": "We are not retreating - we are going in the other direction — Douglas MacArthur"
         }
       ]
     }
@@ -599,22 +535,22 @@
         "y": 0
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 50,
         "y": 0
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": -50,
         "y": 0
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 0,
         "y": -50
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 0,
         "y": 50
       }
@@ -626,13 +562,13 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "Мы замечаем препятствия, когда отрываем взгляд от цели. — <i>Джозеф Коссман</i>"
+          "text": "Мы замечаем препятствия, когда отрываем взгляд от цели. — Джозеф Коссман"
         }
       ],
       "en": [
         {
           "label": "LINES",
-          "text": "We notice the obstacles, when we do not look at the goal. — <i>Joseph Kossman</i>"
+          "text": "We notice the obstacles, when we do not look at the goal. — Joseph Kossman"
         }
       ]
     }
@@ -673,22 +609,22 @@
       {
         "x": -41,
         "y": 88,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": 22,
         "y": 188,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -112,
         "y": 188,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -46,
         "y": 155,
-        "type": "bad"
+        "type": "uncross"
       }
     ],
     "steps": 3,
@@ -951,37 +887,37 @@
       {
         "x": -128,
         "y": 72,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -128,
         "y": 41,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -127,
         "y": 12,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -125,
         "y": -21,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -124,
         "y": -56,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -123,
         "y": -91,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -131,
         "y": 111,
-        "type": "bad"
+        "type": "uncross"
       }
     ],
     "steps": 3,
@@ -1038,72 +974,72 @@
       {
         "x": 161,
         "y": 107,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": 128,
         "y": 125,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -238,
         "y": 32,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -227,
         "y": 158,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -189,
         "y": 137,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -258,
         "y": 156,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -304,
         "y": 78,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -211,
         "y": 41,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -162,
         "y": 112,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": 48,
         "y": -130,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": 92,
         "y": -190,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -24,
         "y": -200,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -151,
         "y": -37,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -257,
         "y": 163,
-        "type": "bad"
+        "type": "uncross"
       },
       {
         "x": -216,
@@ -1113,7 +1049,7 @@
       {
         "x": -262,
         "y": 172,
-        "type": "bad"
+        "type": "uncross"
       }
     ],
     "steps": 5,
@@ -1149,12 +1085,12 @@
         "y": -70
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 55,
         "y": -30
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": -55,
         "y": -30
       },
@@ -1179,22 +1115,22 @@
         "y": 70
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": -175,
         "y": 40
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 175,
         "y": 40
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 55,
         "y": 200
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": -55,
         "y": 200
       }
@@ -1207,13 +1143,13 @@
       "ru": [
         {
           "label": "LINES",
-          "text": "Не тратьте время в поиске препятствий: их может и не существовать. — <i>Франц Кафка</i>"
+          "text": "Не тратьте время в поиске препятствий: их может и не существовать. — Франц Кафка"
         }
       ],
       "en": [
         {
           "label": "LINES",
-          "text": "Do not waste your time searching for obstacles: they may does not exist. — <i>Franz Kafka</i>"
+          "text": "Do not waste your time searching for obstacles: they may does not exist. — Franz Kafka"
         }
       ]
     }
@@ -1222,22 +1158,22 @@
     "label": "IMPOSSIBLE",
     "objects": [
       {
-        "type": "bad",
+        "type": "uncross",
         "x": -75,
         "y": -75
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": -75,
         "y": 75
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 75,
         "y": -75
       },
       {
-        "type": "bad",
+        "type": "uncross",
         "x": 75,
         "y": 75
       }
@@ -1253,7 +1189,7 @@
         },
         {
           "label": "LINES",
-          "text": "Но это не та игра... — <i>AZbang</i>"
+          "text": "Но это не та игра... — AZbang"
         }
       ],
       "en": [
@@ -1263,7 +1199,7 @@
         },
         {
           "label": "LINES",
-          "text": "But this is not a game... — <i>AZbang</i>"
+          "text": "But this is not a game... — AZbang"
         }
       ]
     }
