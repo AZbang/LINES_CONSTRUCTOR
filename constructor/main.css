@@ -5,7 +5,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: url(./bg.jpg);
+  background: url(./assets/bg.jpg);
   background-position: center center;
   background-size: cover;
   overflow: hidden;
@@ -20,10 +20,15 @@ body.context {
   display: none;
 }
 
+.ui {
+  position: absolute;
+}
+
 .radialnav {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  z-index: 10000;
 }
 
 .radialnav-sector {
@@ -59,4 +64,37 @@ body.context {
 
 .radialnav-hint.active {
   opacity: 1;
+}
+
+
+.cross {
+  r: 25;
+  fill: rgb(228, 78, 78);
+  stroke-width: 3;
+}
+
+.uncross {
+  r: 25;
+  fill: rgba(103, 58, 183, 0.63);
+  stroke-width: 3;
+}
+
+.hint {
+  fill: rgba(225, 225, 225, 0.3);
+  stroke: #fff;
+  stroke-width: 2;
+  r: 30;
+}
+
+.touch {
+  fill: transparent;
+  stroke: #FFFFFF;
+  opacity: 1;
+  stroke-width: 5;
+}
+.untouch {
+  fill: transparent;
+  stroke: #FF3535;
+  opacity: 0.8;
+  stroke-width: 5;
 }
