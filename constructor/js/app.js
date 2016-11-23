@@ -1,8 +1,9 @@
 class Constructor {
 	constructor(game) {
 		this.paper = Snap(window.innerWidth, window.innerHeight);
-		this.rects = this.paper.svg(0, 0, window.innerWidth, window.innerHeight).addClass('rects');
-		this.circles = this.paper.svg(0, 0, window.innerWidth, window.innerHeight).addClass('circles');
+		this.constr = this.paper.svg(0, 0, window.innerWidth, window.innerHeight);
+		this.rects = this.constr.g().addClass('rects');
+		this.circles = this.constr.g().addClass('circles');
 
 		this.gui = new GUI(this.paper, 'constructor/assets/icons.svg', [
 			{
@@ -41,7 +42,7 @@ class Constructor {
 		this.type = 'cross';
 		this.typeShape = 'circle';
 
-		this.cell = 50;
+		this.cell = 25;
 
 		this._bindEvents();
 	}
@@ -64,7 +65,15 @@ class Constructor {
 			}
 			if(e.which === 2) this.gui.nav.hide(e);
 		});
-		$('#completeBtn').click(this.generateCongif.bind(this));
+		$('#completeBtn').click(() => {
+			if(!$('#config').val()) {
+				$('#config').val(JSON.stringify(this.generateCongif(), "", 4));
+			} else {
+				console.log($('#config').val());
+				this.parseConfig(JSON.parse($('#config').val()));
+			}
+		});
+		$('#deleteBtn').click(() => this.delete());
 	}
 
 	formatCell(x, y) {
@@ -138,8 +147,41 @@ class Constructor {
 				type: rect.attr('class')
 			});
 		}
-		console.log(conf);
 		return conf;
+	}
+	parseConfig(config) {
+		this.delete();
+
+		if(!config.hints) config.hints = [];
+		if(!config.objects) config.objects = [];
+		if(!config.areas) config.areas = [];
+
+		for(let i = 0; i < config.objects.length; i++) {
+			this.circles
+				.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
+				.attr({id: this.circles.node.children.length})
+				.addClass(config.objects[i].type)
+		}
+		for(let i = 0; i < config.hints.length; i++) {
+			this.circles
+				.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
+				.attr({id: this.circles.node.children.length})
+				.addClass('hint')
+		}
+
+		for(let i = 0; i < config.areas.length; i++) {
+			this.areas
+				.rect(config.areas[i].x+window.innerWidth/2, config.areas[i].y+window.innerHeight/2, config.areas[i].w, config.areas[i].h)
+				.attr({id: this.areas.node.children.length})
+				.addClass(config.areas[i].type)
+		}
+	}
+	delete() {
+		this.rects.remove();
+		this.circles.remove();
+
+		this.rects = this.constr.g().addClass('rects');
+		this.circles = this.constr.g().addClass('circles');
 	}
 }
 

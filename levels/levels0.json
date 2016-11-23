@@ -78,60 +78,78 @@
   },
   {
     "label": "V and IX",
-    "objects": [
-      {
-        "x": -95,
-        "y": -95,
-        "type": "cross"
-      },
-      {
-        "x": 0,
-        "y": -95,
-        "type": "cross"
-      },
-      {
-        "x": 95,
-        "y": -95,
-        "type": "cross"
-      },
-      {
-        "x": 95,
-        "y": 0,
-        "type": "cross"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "type": "cross"
-      },
-      {
-        "x": -95,
-        "y": 0,
-        "type": "cross"
-      },
-      {
-        "x": -95,
-        "y": 95,
-        "type": "cross"
-      },
-      {
-        "x": 0,
-        "y": 95,
-        "type": "cross"
-      },
-      {
-        "x": 95,
-        "y": 95,
-        "type": "cross"
-      }
-    ],
-    "steps": 5,
     "intersections": 9,
+    "steps": 4,
+    "clicks": 50,
+    "objects": [
+        {
+            "x": 95,
+            "y": 95,
+            "type": "cross"
+        },
+        {
+            "x": 0,
+            "y": 95,
+            "type": "cross"
+        },
+        {
+            "x": -95,
+            "y": 95,
+            "type": "cross"
+        },
+        {
+            "x": -95,
+            "y": 0,
+            "type": "cross"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "type": "cross"
+        },
+        {
+            "x": 95,
+            "y": 0,
+            "type": "cross"
+        },
+        {
+            "x": 95,
+            "y": -95,
+            "type": "cross"
+        },
+        {
+            "x": 0,
+            "y": -95,
+            "type": "cross"
+        },
+        {
+            "x": -95,
+            "y": -95,
+            "type": "cross"
+        }
+    ],
+    "hints": [
+        {
+            "x": -268.5,
+            "y": 141.5
+        },
+        {
+            "x": 331.5,
+            "y": 41.5
+        },
+        {
+            "x": -268.5,
+            "y": -58.5
+        },
+        {
+            "x": 331.5,
+            "y": -158.5
+        }
+    ],
     "buttons": "R",
     "areas": null,
     "hintRU": null,
-    "hintUS": null,
-    "new": true
+    "hintUS": null
   },
   {
     "label": "III IN A ROW",
