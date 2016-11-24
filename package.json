@@ -4,7 +4,7 @@
   "description": "Constructor levels for puzzle game LINES...",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node-server ./"
   },
   "repository": {
     "type": "git",
