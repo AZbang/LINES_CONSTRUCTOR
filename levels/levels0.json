@@ -11,7 +11,7 @@
     "steps": 2,
     "intersections": 1,
     "buttons": "R",
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
@@ -61,20 +61,34 @@
     "steps": 3,
     "intersections": 4,
     "buttons": "R",
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
           "text": "Конец уже содержится в начале. — Джордж Оруэлл. 1984"          
+        },
+        {
+          "label": "INFO",
+          "text": "Нажмите на H, чтобы получить подсказку, когда она появится"
         }
       ],
       "en": [
         {
           "label": "LINES",
           "text": "The end is already contained in the beginning. - George Orwell. 1984"
+        },
+        {
+          "label": "INFO",
+          "text": "Press H, to get a clue when it appears"
         }
       ]
-    }
+    },
+    "clicks": 18,
+    "hints": [
+      {"x": 250, "y": -125},
+      {"x": -350, "y": 0},
+      {"x": 250, "y": 125}
+    ]
   },
   {
     "label": "V and IX",
@@ -198,12 +212,12 @@
         "type": "cross",
         "x": 50,
         "y": 50
-      }
+      },
     ],
     "steps": 2,
     "intersections": 5,
     "buttons": "R",
-    "hints": {
+    "windows": {
       "en": [
         {
           "label": "LINES",
@@ -216,46 +230,65 @@
           "text": "Не проигрывает не тот, кто знает все варианты победы, а тот, кто знает все варианты поражения. — Гарун Агацарский"
         }
       ]
-    }
+    },
+    "clicks": 22,
+    "hints": [
+      {"x": -100, "y": 100},
+      {"x": 60, "y": -100}
+    ]
   },
   {
     "label": "CONIUNCTIS",
-    "objects": [
-      {
-        "type": "cross",
-        "x": 250,
-        "y": -125
-      },
-      {
-        "type": "cross",
-        "x": -250,
-        "y": -125
-      },
-      {
-        "type": "cross",
-        "x": -312.5,
-        "y": -25
-      },
-      {
-        "type": "cross",
-        "x": 312.5,
-        "y": -25
-      }
-    ],
-    "steps": 3,
     "intersections": 4,
+    "steps": 3,
+    "clicks": 50,
+    "objects": [
+        {
+            "x": -230,
+            "y": -80,
+            "type": "cross"
+        },
+        {
+            "x": 220,
+            "y": -80,
+            "type": "cross"
+        },
+        {
+            "x": 270,
+            "y": 20,
+            "type": "cross"
+        },
+        {
+            "x": -280,
+            "y": 20,
+            "type": "cross"
+        }
+    ],
+    "hints": [
+        {
+            "x": -5,
+            "y": -30
+        },
+        {
+            "x": -130,
+            "y": -5
+        },
+        {
+            "x": 120,
+            "y": -5
+        }
+    ],
     "areas": [
-      {
-        "x": -200,
-        "w": 400,
-        "y": -200,
-        "h": 400,
-        "type": "touch"
-      }
+        {
+            "x": -189,
+            "y": -119,
+            "w": 368,
+            "h": 208,
+            "type": "touch"
+        }
     ],
     "buttons": "R",
-
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
@@ -272,61 +305,84 @@
   },
   {
     "label": "RATS",
-    "objects": [
-      {
-        "type": "cross",
-        "x": -250,
-        "y": -25
-      },
-      {
-        "type": "cross",
-        "x": 250,
-        "y": -25
-      },
-      {
-        "type": "cross",
-        "x": -25,
-        "y": -250
-      },
-      {
-        "type": "cross",
-        "x": 25,
-        "y": -250
-      },
-      {
-        "type": "cross",
-        "x": -100,
-        "y": 260
-      },
-      {
-        "type": "cross",
-        "x": 100,
-        "y": 260
-      },
-      {
-        "type": "cross",
-        "x": -135,
-        "y": 225
-      },
-      {
-        "type": "cross",
-        "x": 135,
-        "y": 225
-      }
-    ],
-    "steps": 5,
     "intersections": 8,
+    "steps": 5,
+    "objects": [
+        {
+            "x": -230,
+            "y": -30,
+            "type": "cross"
+        },
+        {
+            "x": 220,
+            "y": -30,
+            "type": "cross"
+        },
+        {
+            "x": -30,
+            "y": -230,
+            "type": "cross"
+        },
+        {
+            "x": 20,
+            "y": -230,
+            "type": "cross"
+        },
+        {
+            "x": -100,
+            "y": 260,
+            "type": "cross"
+        },
+        {
+            "x": 100,
+            "y": 260,
+            "type": "cross"
+        },
+        {
+            "x": -135,
+            "y": 225,
+            "type": "cross"
+        },
+        {
+            "x": 135,
+            "y": 225,
+            "type": "cross"
+        }
+    ],
+    "clicks": 50,
+    "hints": [
+        {
+            "x": 145,
+            "y": 20
+        },
+        {
+            "x": -80,
+            "y": 170
+        },
+        {
+            "x": -5,
+            "y": -180
+        },
+        {
+            "x": 70,
+            "y": 170
+        },
+        {
+            "x": -155,
+            "y": 20
+        }
+    ],
     "areas": [
-      {
-        "x": -175,
-        "w": 350,
-        "y": -175,
-        "h": 350,
-        "type": "touch"
-      }
+        {
+            "x": -175,
+            "y": -175,
+            "w": 350,
+            "h": 350,
+            "type": "touch"
+        }
     ],
     "buttons": "R",
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
@@ -343,37 +399,52 @@
   },
   {
     "label": "TRIGONUS",
+    "clicks": 50,
     "objects": [
-      {
-        "type": "cross",
-        "x": -150,
-        "y": 0
-      },
-      {
-        "type": "cross",
-        "x": -100,
-        "y": -50
-      },
-      {
-        "type": "cross",
-        "x": 200,
-        "y": 50
-      },
-      {
-        "type": "cross",
-        "x": 100,
-        "y": -50
-      },
-      {
-        "type": "cross",
-        "x": 150,
-        "y": 100
-      },
-      {
-        "type": "cross",
-        "x": -50,
-        "y": 100
-      }
+        {
+            "x": -180,
+            "y": -5,
+            "type": "cross"
+        },
+        {
+            "x": -130,
+            "y": -55,
+            "type": "cross"
+        },
+        {
+            "x": 170,
+            "y": 45,
+            "type": "cross"
+        },
+        {
+            "x": 70,
+            "y": -55,
+            "type": "cross"
+        },
+        {
+            "x": 120,
+            "y": 95,
+            "type": "cross"
+        },
+        {
+            "x": -80,
+            "y": 95,
+            "type": "cross"
+        }
+    ],
+    "hints": [
+        {
+            "x": -280,
+            "y": 95
+        },
+        {
+            "x": -30,
+            "y": -155
+        },
+        {
+            "x": 220,
+            "y": 95
+        }
     ],
     "steps": 3,
     "intersections": 6,
@@ -387,7 +458,7 @@
       }
     ],
     "buttons": "R Z",
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
@@ -412,77 +483,78 @@
   },
   {
     "label": "BEAR",
-    "objects": [
-      {
-        "x": -325,
-        "y": -15,
-        "type": "cross"
-      },
-      {
-        "x": -30,
-        "y": 60,
-        "type": "cross"
-      },
-      {
-        "x": 20,
-        "y": 190,
-        "type": "cross"
-      },
-      {
-        "x": 180,
-        "y": 207,
-        "type": "cross"
-      },
-      {
-        "x": 246,
-        "y": 89,
-        "type": "cross"
-      },
-      {
-        "x": -473,
-        "y": -97,
-        "type": "cross"
-      }
-    ],
     "steps": 3,
     "intersections": 6,
-    "buttons": "RZ",
+    "clicks": 50,
+    "buttons": "R Z",
+    "objects": [
+        {
+            "x": -130,
+            "y": 70,
+            "type": "cross"
+        },
+        {
+            "x": 45,
+            "y": 45,
+            "type": "cross"
+        },
+        {
+            "x": 245,
+            "y": 195,
+            "type": "cross"
+        },
+        {
+            "x": 295,
+            "y": 70,
+            "type": "cross"
+        },
+        {
+            "x": -305,
+            "y": -55,
+            "type": "cross"
+        },
+        {
+            "x": 70,
+            "y": 170,
+            "type": "cross"
+        }
+    ],
+    "hints": [
+        {
+            "x": 245,
+            "y": 220
+        },
+        {
+            "x": -330,
+            "y": -30
+        },
+        {
+            "x": 70,
+            "y": 45
+        }
+    ],
     "areas": [
-      {
-        "x": -501,
-        "y": -132,
-        "w": 11,
-        "h": 0,
-        "type": "touch"
-      },
-      {
-        "x": -514,
-        "y": -137,
-        "w": 81,
-        "h": 83,
-        "type": "touch"
-      },
-      {
-        "x": 144,
-        "y": 180,
-        "w": 0,
-        "h": 1,
-        "type": "touch"
-      },
-      {
-        "x": 146,
-        "y": 174,
-        "w": 69,
-        "h": 66,
-        "type": "touch"
-      },
-      {
-        "x": -72,
-        "y": 25,
-        "w": 84,
-        "h": 73,
-        "type": "touch"
-      }
+        {
+            "x": -339,
+            "y": -91,
+            "w": 69,
+            "h": 70,
+            "type": "touch"
+        },
+        {
+            "x": 10,
+            "y": 11,
+            "w": 71,
+            "h": 68,
+            "type": "touch"
+        },
+        {
+            "x": 212,
+            "y": 163,
+            "w": 67,
+            "h": 66,
+            "type": "touch"
+        }
     ],
     "hintRU": null,
     "hintUS": null,
@@ -490,6 +562,25 @@
   },
   {
     "label": "BACKWARDS",
+    "clicks": 50,
+    "hints": [
+        {
+            "x": -80,
+            "y": 70
+        },
+        {
+            "x": -5,
+            "y": -155
+        },
+        {
+            "x": 95,
+            "y": -155
+        },
+        {
+            "x": 45,
+            "y": 120
+        }
+    ],
     "objects": [
       {
         "type": "cross",
@@ -529,7 +620,7 @@
     "steps": 4,
     "intersections": 5,
     "buttons": "R Z",
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
@@ -546,37 +637,56 @@
   },
   {
     "label": "MALUM",
+    "clicks": 5,
     "objects": [
-      {
-        "type": "cross",
-        "x": 0,
-        "y": 0
-      },
-      {
-        "type": "uncross",
-        "x": 50,
-        "y": 0
-      },
-      {
-        "type": "uncross",
-        "x": -50,
-        "y": 0
-      },
-      {
-        "type": "uncross",
-        "x": 0,
-        "y": -50
-      },
-      {
-        "type": "uncross",
-        "x": 0,
-        "y": 50
-      }
+        {
+            "x": -5,
+            "y": -5,
+            "type": "cross"
+        },
+        {
+            "x": 45,
+            "y": -5,
+            "type": "uncross"
+        },
+        {
+            "x": -55,
+            "y": -5,
+            "type": "uncross"
+        },
+        {
+            "x": -5,
+            "y": -55,
+            "type": "uncross"
+        },
+        {
+            "x": -5,
+            "y": 45,
+            "type": "uncross"
+        }
+    ],
+    "hints": [
+        {
+            "x": -55,
+            "y": 45
+        },
+        {
+            "x": 45,
+            "y": -55
+        },
+        {
+            "x": -55,
+            "y": -55
+        },
+        {
+            "x": 45,
+            "y": 45
+        }
     ],
     "steps": 2,
     "intersections": 1,
     "buttons": "R Z",
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
@@ -593,76 +703,87 @@
   },
   {
     "label": "III",
+    "clicks": 30,
     "objects": [
-      {
-        "x": -163,
-        "y": 152,
-        "type": "cross"
-      },
-      {
-        "x": -107,
-        "y": 59,
-        "type": "cross"
-      },
-      {
-        "x": -47,
-        "y": -32,
-        "type": "cross"
-      },
-      {
-        "x": 27,
-        "y": 60,
-        "type": "cross"
-      },
-      {
-        "x": 78,
-        "y": 148,
-        "type": "cross"
-      },
-      {
-        "x": -42,
-        "y": 253,
-        "type": "cross"
-      },
-      {
-        "x": -41,
-        "y": 88,
-        "type": "uncross"
-      },
-      {
-        "x": 22,
-        "y": 188,
-        "type": "uncross"
-      },
-      {
-        "x": -112,
-        "y": 188,
-        "type": "uncross"
-      },
-      {
-        "x": -46,
-        "y": 155,
-        "type": "uncross"
-      }
+        {
+            "x": -155,
+            "y": 45,
+            "type": "cross"
+        },
+        {
+            "x": -80,
+            "y": -30,
+            "type": "cross"
+        },
+        {
+            "x": -5,
+            "y": -105,
+            "type": "cross"
+        },
+        {
+            "x": 70,
+            "y": -30,
+            "type": "cross"
+        },
+        {
+            "x": 145,
+            "y": 45,
+            "type": "cross"
+        },
+        {
+            "x": -5,
+            "y": 170,
+            "type": "cross"
+        },
+        {
+            "x": -5,
+            "y": -30,
+            "type": "uncross"
+        },
+        {
+            "x": 70,
+            "y": 95,
+            "type": "uncross"
+        },
+        {
+            "x": -80,
+            "y": 95,
+            "type": "uncross"
+        },
+        {
+            "x": -5,
+            "y": 45,
+            "type": "uncross"
+        },
+        {
+            "x": 70,
+            "y": -155,
+            "type": "uncross"
+        },
+        {
+            "x": -80,
+            "y": -155,
+            "type": "uncross"
+        }
+    ],
+    "hints": [
+        {
+            "x": -255,
+            "y": 170
+        },
+        {
+            "x": 20,
+            "y": -180
+        },
+        {
+            "x": 195,
+            "y": 170
+        }
     ],
     "steps": 3,
     "intersections": 6,
     "buttons": "RZ",
-    "areas": null,
-    "hints": {
-      "ru": [
-        {
-          "label": "LINES",
-          "text": "Представьте себе треугольник"
-        }
-      ],
-      "en": [
-        {
-          "label": "LINES",
-          "text": "Imagine a triangle"
-        }
-      ]
-    }
+    "areas": null
   },
   {
     "label": "EAZY?",
@@ -938,6 +1059,21 @@
         "type": "uncross"
       }
     ],
+    "clicks": 50,
+    "hints": [
+        {
+            "x": 95,
+            "y": 145
+        },
+        {
+            "x": 120,
+            "y": -105
+        },
+        {
+            "x": -180,
+            "y": -230
+        }
+    ],
     "steps": 3,
     "intersections": 20,
     "buttons": "RZ",
@@ -947,144 +1083,167 @@
     "new": true
   },
   {
-    "label": "IT'S NOT SO DIFFICULT",
+    "label": "CHAOS",
+    "clicks": 50,
     "objects": [
-      {
-        "x": -219,
-        "y": -114,
-        "type": "cross"
-      },
-      {
-        "x": 52,
-        "y": 7,
-        "type": "cross"
-      },
-      {
-        "x": 114,
-        "y": -77,
-        "type": "cross"
-      },
-      {
-        "x": 171,
-        "y": -152,
-        "type": "cross"
-      },
-      {
-        "x": -44,
-        "y": 7,
-        "type": "cross"
-      },
-      {
-        "x": -72,
-        "y": -118,
-        "type": "cross"
-      },
-      {
-        "x": -148,
-        "y": -117,
-        "type": "cross"
-      },
-      {
-        "x": -239,
-        "y": 98,
-        "type": "cross"
-      },
-      {
-        "x": 161,
-        "y": 107,
-        "type": "uncross"
-      },
-      {
-        "x": 128,
-        "y": 125,
-        "type": "uncross"
-      },
-      {
-        "x": -238,
-        "y": 32,
-        "type": "uncross"
-      },
-      {
-        "x": -227,
-        "y": 158,
-        "type": "uncross"
-      },
-      {
-        "x": -189,
-        "y": 137,
-        "type": "uncross"
-      },
-      {
-        "x": -258,
-        "y": 156,
-        "type": "uncross"
-      },
-      {
-        "x": -304,
-        "y": 78,
-        "type": "uncross"
-      },
-      {
-        "x": -211,
-        "y": 41,
-        "type": "uncross"
-      },
-      {
-        "x": -162,
-        "y": 112,
-        "type": "uncross"
-      },
-      {
-        "x": 48,
-        "y": -130,
-        "type": "uncross"
-      },
-      {
-        "x": 92,
-        "y": -190,
-        "type": "uncross"
-      },
-      {
-        "x": -24,
-        "y": -200,
-        "type": "uncross"
-      },
-      {
-        "x": -151,
-        "y": -37,
-        "type": "uncross"
-      },
-      {
-        "x": -257,
-        "y": 163,
-        "type": "uncross"
-      },
-      {
-        "x": -216,
-        "y": -29,
-        "type": "cross"
-      },
-      {
-        "x": -262,
-        "y": 172,
-        "type": "uncross"
-      }
+        {
+            "x": -205,
+            "y": -155,
+            "type": "cross"
+        },
+        {
+            "x": 95,
+            "y": 20,
+            "type": "cross"
+        },
+        {
+            "x": 145,
+            "y": -80,
+            "type": "cross"
+        },
+        {
+            "x": 220,
+            "y": -155,
+            "type": "cross"
+        },
+        {
+            "x": -30,
+            "y": 45,
+            "type": "cross"
+        },
+        {
+            "x": -30,
+            "y": -130,
+            "type": "cross"
+        },
+        {
+            "x": -130,
+            "y": -155,
+            "type": "cross"
+        },
+        {
+            "x": -239,
+            "y": 98,
+            "type": "cross"
+        },
+        {
+            "x": 195,
+            "y": 95,
+            "type": "uncross"
+        },
+        {
+            "x": 120,
+            "y": 145,
+            "type": "uncross"
+        },
+        {
+            "x": -280,
+            "y": 20,
+            "type": "uncross"
+        },
+        {
+            "x": -205,
+            "y": 170,
+            "type": "uncross"
+        },
+        {
+            "x": -130,
+            "y": 195,
+            "type": "uncross"
+        },
+        {
+            "x": -280,
+            "y": 195,
+            "type": "uncross"
+        },
+        {
+            "x": -304,
+            "y": 78,
+            "type": "uncross"
+        },
+        {
+            "x": -105,
+            "y": 120,
+            "type": "uncross"
+        },
+        {
+            "x": 95,
+            "y": -155,
+            "type": "uncross"
+        },
+        {
+            "x": 170,
+            "y": -230,
+            "type": "uncross"
+        },
+        {
+            "x": 20,
+            "y": -230,
+            "type": "uncross"
+        },
+        {
+            "x": -105,
+            "y": -30,
+            "type": "uncross"
+        },
+        {
+            "x": -230,
+            "y": -80,
+            "type": "cross"
+        },
+        {
+            "x": -230,
+            "y": 20,
+            "type": "uncross"
+        },
+        {
+            "x": 245,
+            "y": -55,
+            "type": "uncross"
+        },
+        {
+            "x": -5,
+            "y": 270,
+            "type": "uncross"
+        }
+    ],
+    "hints": [
+        {
+            "x": -305,
+            "y": 120
+        },
+        {
+            "x": 195,
+            "y": -5
+        },
+        {
+            "x": -330,
+            "y": -205
+        },
+        {
+            "x": -105,
+            "y": 45
+        },
+        {
+            "x": 295,
+            "y": -205
+        }
     ],
     "steps": 5,
     "intersections": 9,
     "buttons": "RZ",
     "areas": null,
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
-          "text": "Remember, an unlimited number of attempts, makes it possible not to stand on the same rake twice"
+          "text": "Жизнь — это прежде всего хаос, в котором ты затерян. Хосе Ортега-и-Гассет"
         }
       ],
       "en": [
         {
           "label": "LINES",
-          "text": "Remember, an unlimited number of attempts, makes it possible not to stand on the same rake twice"
+          "text": "Life - is first of all the chaos, in which you lost. Josе Ortega y Gasset"
         }
       ],
     }
@@ -1153,11 +1312,30 @@
         "y": 200
       }
     ],
+    "clicks": 50,
+    "hints": [
+        {
+            "x": -230,
+            "y": -80
+        },
+        {
+            "x": -205,
+            "y": 95
+        },
+        {
+            "x": 220,
+            "y": 95
+        },
+        {
+            "x": 245,
+            "y": -80
+        }
+    ],
     "steps": 4,
     "intersections": 6,
     "buttons": "R Z",
 
-    "hints": {
+    "windows": {
       "ru": [
         {
           "label": "LINES",
@@ -1168,56 +1346,6 @@
         {
           "label": "LINES",
           "text": "Do not waste your time searching for obstacles: they may does not exist. — Franz Kafka"
-        }
-      ]
-    }
-  },
-  {
-    "label": "IMPOSSIBLE",
-    "objects": [
-      {
-        "type": "uncross",
-        "x": -75,
-        "y": -75
-      },
-      {
-        "type": "uncross",
-        "x": -75,
-        "y": 75
-      },
-      {
-        "type": "uncross",
-        "x": 75,
-        "y": -75
-      },
-      {
-        "type": "uncross",
-        "x": 75,
-        "y": 75
-      }
-    ],
-    "steps": 3,
-    "intersections": 4,
-    "buttons": "R",
-    "hints": {
-      "ru": [
-        {
-          "label": "LINES",
-          "text": "Самая захватывающая игра - та, в которой вы выигрываете,"
-        },
-        {
-          "label": "LINES",
-          "text": "Но это не та игра... — AZbang"
-        }
-      ],
-      "en": [
-        {
-          "label": "LINES",
-          "text": "The most exciting game - one in which you win,"
-        },
-        {
-          "label": "LINES",
-          "text": "But this is not a game... — AZbang"
         }
       ]
     }
