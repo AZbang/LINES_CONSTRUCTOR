@@ -10,6 +10,8 @@ body {
   background-size: cover;
   overflow: hidden;
   cursor: pointer;
+  color: #FFF;
+  font-family: Poiret One
 }
 
 body.context {

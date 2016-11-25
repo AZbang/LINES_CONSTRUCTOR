@@ -57,7 +57,14 @@ class Constructor {
 		$(this.paper.node).mousedown((e) => {
 			if(e.which === 1) this.addBody(e);
 			if(e.which === 2) this.gui.nav.show(e);
-			if(e.which === 3 && e.target != this.paper.node) e.target.remove();
+			if(e.which === 3 && e.target != this.paper.node) {
+				let p = e.target.parentNode;
+				e.target.remove();
+
+				for(let i = 0; i < p.children.length; i++) {
+					p.children[i].id = i;
+				}
+			}
 		});
 		$(this.paper.node).mouseup((e) => {
 			if(e.which === 1 && this.typeShape == 'rect') {
@@ -69,8 +76,8 @@ class Constructor {
 			if(!$('#config').val()) {
 				$('#config').val(JSON.stringify(this.generateCongif(), "", 4));
 			} else {
-				console.log($('#config').val());
 				this.parseConfig(JSON.parse($('#config').val()));
+				$('#config').val('');
 			}
 		});
 		$('#deleteBtn').click(() => this.delete());
@@ -88,16 +95,16 @@ class Constructor {
 		var obj;
 		if(this.typeShape === 'circle') {
 			var pos = this.formatCell(e.clientX, e.clientY);
-			obj = this.circles.circle(pos.x, pos.y, 25).attr({id: this.circles.node.children.length});
+			obj = this.circles.circle(pos.x, pos.y, 25).attr({id: this.circles.node.children.length-1});
 
-			obj.drag(function(dx, dy, x, y, event) {
-				this.attr({
-					cx: Math.round(x/50)*50,
-					cy: Math.round(y/50)*50,
+			obj.drag((dx, dy, x, y, event) => {
+				obj.attr({
+					cx: Math.round(x/this.cell)*this.cell,
+					cy: Math.round(y/this.cell)*this.cell,
 				});
-			});			
+			});		
 		} else {
-			obj = this.rects.rect(e.clientX, e.clientY, 0, 0).attr({id: this.rects.node.children.length});
+			obj = this.rects.rect(e.clientX, e.clientY, 0, 0).attr({id: this.rects.node.children.length-1});
 			this.paper.node.onmousemove = function(event) {
 				obj.attr({
 					width: Math.max(0, event.clientX - e.clientX),
@@ -119,29 +126,29 @@ class Constructor {
 
 		conf.objects = [];
 		conf.hints = [];
-		for(let i = 2; i < this.circles.node.children.length; i++) {
-			var circle = this.circles.select('circle[id="' + (i+1) + '"]');
+		for(let i = 0; i < this.circles.node.children.length; i++) {
+			var circle = this.circles.select('circle[id="' + i + '"]');
 
 			if(circle.attr('class') !== 'hint')
 				conf.objects.push({
-					x: window.innerWidth/2-circle.attr('cx'),
-					y: window.innerHeight/2-circle.attr('cy'),
+					x: circle.attr('cx')-window.innerWidth/2,
+					y: circle.attr('cy')-window.innerHeight/2,
 					type: circle.attr('class')
 				});
 			else
 				conf.hints.push({
-					x: window.innerWidth/2-circle.attr('cx'),
-					y: window.innerHeight/2-circle.attr('cy'),
+					x: circle.attr('cx')-window.innerWidth/2,
+					y: circle.attr('cy')-window.innerHeight/2,
 				});
 		}
 
 		conf.areas = [];
 		for(let i = 3; i < this.rects.node.children.length; i++) {
-			var rect = this.rects.select('rect[id="' + (i+1) + '"]');
+			var rect = this.rects.select('rect[id="' + i + '"]');
 
 			conf.areas.push({
-				x: window.innerWidth/2-rect.attr('x'),
-				y: window.innerHeight/2-rect.attr('y'),
+				x: rect.attr('x')-window.innerWidth/2,
+				y: rect.attr('y')-window.innerHeight/2,
 				w: +rect.attr('width'),
 				h: +rect.attr('height'),
 				type: rect.attr('class')
@@ -156,17 +163,36 @@ class Constructor {
 		if(!config.objects) config.objects = [];
 		if(!config.areas) config.areas = [];
 
+		$('#label').val(config.label);
+		$('#intersections').val(config.intersections);
+		$('#steps').val(config.steps);
+		$('#clicks').val(config.clicks);
+
 		for(let i = 0; i < config.objects.length; i++) {
-			this.circles
-				.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
-				.attr({id: this.circles.node.children.length})
-				.addClass(config.objects[i].type)
+			let obj = this.circles
+						.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
+						.attr({id: this.circles.node.children.length})
+						.addClass(config.objects[i].type);
+
+			obj.drag((dx, dy, x, y, event) => {
+				obj.attr({
+					cx: Math.round(x/this.cell)*this.cell,
+					cy: Math.round(y/this.cell)*this.cell,
+				});
+			});	
 		}
 		for(let i = 0; i < config.hints.length; i++) {
-			this.circles
-				.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
-				.attr({id: this.circles.node.children.length})
-				.addClass('hint')
+			let obj = this.circles
+						.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
+						.attr({id: this.circles.node.children.length})
+						.addClass('hint');
+
+			obj.drag((dx, dy, x, y, event) => {
+				obj.attr({
+					cx: Math.round(x/this.cell)*this.cell,
+					cy: Math.round(y/this.cell)*this.cell,
+				});
+			});
 		}
 
 		for(let i = 0; i < config.areas.length; i++) {
@@ -177,6 +203,11 @@ class Constructor {
 		}
 	}
 	delete() {
+		$('#label').val('');
+		$('#intersections').val('');
+		$('#steps').val('');
+		$('#clicks').val('');
+
 		this.rects.remove();
 		this.circles.remove();
 
