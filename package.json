@@ -19,9 +19,9 @@
   "author": "azbang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AZbang/LINES/issues"
+    "url": "https://github.com/AZbang/LINES_CONSTRUCTOR/issues"
   },
-  "homepage": "https://github.com/AZbang/LINES#readme",
+  "homepage": "https://github.com/AZbang/LINES_CONSTRUCTOR#readme",
   "devDependencies": {
     "node-static": "^0.7.9"
   }

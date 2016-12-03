@@ -122,7 +122,22 @@ class Constructor {
 			intersections: +$('#intersections').val(),
 			steps: +$('#steps').val(),
 			clicks: +$('#clicks').val(),
+			windows: {
+				ru: [
+					{
+						label: 'LINES',
+						text: $('#textWindowRU').val()
+					}
+				],
+				en: [
+					{
+						label: 'LINES',
+						text: $('#textWindowEN').val()
+					}
+				]
+			}
 		};
+		conf.buttons = $('#isZ').prop("checked") ? 'RZ' : 'R';
 
 		conf.objects = [];
 		conf.hints = [];
@@ -143,7 +158,7 @@ class Constructor {
 		}
 
 		conf.areas = [];
-		for(let i = 3; i < this.rects.node.children.length; i++) {
+		for(let i = 0; i < this.rects.node.children.length; i++) {
 			var rect = this.rects.select('rect[id="' + i + '"]');
 
 			conf.areas.push({
@@ -167,11 +182,15 @@ class Constructor {
 		$('#intersections').val(config.intersections);
 		$('#steps').val(config.steps);
 		$('#clicks').val(config.clicks);
+		$('#isZ').prop("checked", !!~config.buttons.indexOf('Z'));
+		
+		config.windows && $('#textWindowEN').val(config.windows.en[0].text);
+		config.windows && $('#textWindowRU').val(config.windows.ru[0].text);
 
 		for(let i = 0; i < config.objects.length; i++) {
 			let obj = this.circles
 						.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
-						.attr({id: this.circles.node.children.length})
+						.attr({id: this.circles.node.children.length-1})
 						.addClass(config.objects[i].type);
 
 			obj.drag((dx, dy, x, y, event) => {
@@ -183,8 +202,8 @@ class Constructor {
 		}
 		for(let i = 0; i < config.hints.length; i++) {
 			let obj = this.circles
-						.circle(config.objects[i].x+window.innerWidth/2, config.objects[i].y+window.innerHeight/2, 0)
-						.attr({id: this.circles.node.children.length})
+						.circle(config.hints[i].x+window.innerWidth/2, config.hints[i].y+window.innerHeight/2, 0)
+						.attr({id: this.circles.node.children.length-1})
 						.addClass('hint');
 
 			obj.drag((dx, dy, x, y, event) => {
@@ -196,9 +215,9 @@ class Constructor {
 		}
 
 		for(let i = 0; i < config.areas.length; i++) {
-			this.areas
+			this.rects
 				.rect(config.areas[i].x+window.innerWidth/2, config.areas[i].y+window.innerHeight/2, config.areas[i].w, config.areas[i].h)
-				.attr({id: this.areas.node.children.length})
+				.attr({id: this.rects.node.children.length-1})
 				.addClass(config.areas[i].type)
 		}
 	}
@@ -207,6 +226,9 @@ class Constructor {
 		$('#intersections').val('');
 		$('#steps').val('');
 		$('#clicks').val('');
+		$('#textWindowRU').val('');
+		$('#textWindowEN').val('');
+		$('#isZ').prop("checked", false);
 
 		this.rects.remove();
 		this.circles.remove();
