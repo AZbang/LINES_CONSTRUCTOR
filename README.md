@@ -1,30 +1,14 @@
 ![Header Game](https://p5b4y2t6.ssl.hwcdn.net/game-header/2000/134288-vpr9hptd.jpg)
 
-#LINES
-> A geometric puzzle made in a minimalist style, in which you have to use logic and skill to solve problems without knowing the goal. Over time, the game becomes more complicated, introducing new possibilities and combinations. I am sure that with each complete level you will be more and more proud of myself, because it's really hard! 
+#LINES_CONSTRUCTOR
+> This constructor levels for the game LINES.
 
+> **You can create your own level** and send it to me by mail `azbango5@gmail.com` with the title "NEW LEVEL FOR LINES" and I will add it to the game!
 
-###Features:
-* Modern minimalist design. 
-* New levels every week! 
-* Sophisticated geometric puzzles. 
-* Interesting and unusual idea. 
+> [Go to the constructor](https://azbang.github.io/LINES_CONSTRUCTOR)
 
-
-###GooglePlay: 
-
-* [FREE VERSION](https://play.google.com/store/apps/details?id=com.azbang.lines)
-* [PAID VERSION](https://play.google.com/store/apps/details?id=com.azbang.linespro)
-
-========
-
-Game by *azbang*
-
-Music by [Kickhat](http://vk.com/kickhatz) (Music: Loneliness)
-
-Publication by [BUG-studio](https://vk.com/bugstudiogames)
-
-=========
+##Where do I play?
+> Links to the game in GooglePlay you can find [here](https://github.com/AZbang/LINES/tree/master)
 
 # Author
 **Andrey Zhevlakov (@AZbang)**
