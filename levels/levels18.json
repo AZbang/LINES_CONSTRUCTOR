@@ -1,0 +1,160 @@
+{
+    "label": "MOTTION",
+    "intersections": 7,
+    "steps": 4,
+    "clicks": 100,
+    "windows": {
+        "ru": [
+            {
+                "label": "LINES",
+                "text": ""
+            }
+        ],
+        "en": [
+            {
+                "label": "LINES",
+                "text": ""
+            }
+        ]
+    },
+    "buttons": "RZ",
+    "objects": [
+        {
+            "x": -110,
+            "y": 0,
+            "type": "cross"
+        },
+        {
+            "x": -135,
+            "y": -25,
+            "type": "uncross"
+        },
+        {
+            "x": -35,
+            "y": -150,
+            "type": "cross"
+        },
+        {
+            "x": 140,
+            "y": -50,
+            "type": "cross"
+        },
+        {
+            "x": -10,
+            "y": -175,
+            "type": "uncross"
+        },
+        {
+            "x": 115,
+            "y": -75,
+            "type": "uncross"
+        },
+        {
+            "x": 15,
+            "y": 125,
+            "type": "cross"
+        },
+        {
+            "x": 40,
+            "y": 100,
+            "type": "uncross"
+        },
+        {
+            "x": 15,
+            "y": -25,
+            "type": "cross"
+        },
+        {
+            "x": 15,
+            "y": -50,
+            "type": "uncross"
+        },
+        {
+            "x": 40,
+            "y": -25,
+            "type": "uncross"
+        },
+        {
+            "x": -10,
+            "y": -25,
+            "type": "uncross"
+        },
+        {
+            "x": 15,
+            "y": 0,
+            "type": "uncross"
+        },
+        {
+            "x": -60,
+            "y": -175,
+            "type": "cross"
+        },
+        {
+            "x": -10,
+            "y": 125,
+            "type": "cross"
+        },
+        {
+            "x": -10,
+            "y": 100,
+            "type": "cross"
+        },
+        {
+            "x": 165,
+            "y": -25,
+            "type": "uncross"
+        }
+    ],
+    "hints": [
+        {
+            "x": -160,
+            "y": 25
+        },
+        {
+            "x": -10,
+            "y": -125
+        },
+        {
+            "x": 115,
+            "y": -25
+        },
+        {
+            "x": 265,
+            "y": -175
+        },
+        {
+            "x": 115,
+            "y": 175
+        }
+    ],
+    "areas": [
+        {
+            "x": -39,
+            "y": -206,
+            "w": 0,
+            "h": 4,
+            "type": "untouch"
+        },
+        {
+            "x": -43,
+            "y": -211,
+            "w": 0,
+            "h": 0,
+            "type": "untouch"
+        },
+        {
+            "x": -37,
+            "y": -204,
+            "w": 0,
+            "h": 0,
+            "type": "untouch"
+        },
+        {
+            "x": -42,
+            "y": -202,
+            "w": 0,
+            "h": 5,
+            "type": "untouch"
+        }
+    ]
+}
