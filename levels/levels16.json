@@ -1,0 +1,94 @@
+{
+    "label": "LIGIO",
+    "intersections": 6,
+    "steps": 3,
+    "clicks": 50,
+    "windows": {
+        "ru": [
+            {
+                "label": "LINES",
+                "text": "Сhoice. The problem is choice. — The Matrix"
+            }
+        ],
+        "en": [
+            {
+                "label": "LINES",
+                "text": "Выбор. Вся проблема в выборе. — Матрица"
+            }
+        ]
+    },
+    "buttons": "RZ",
+    "objects": [
+        {
+            "x": -35,
+            "y": -175,
+            "type": "cross"
+        },
+        {
+            "x": -160,
+            "y": -175,
+            "type": "cross"
+        },
+        {
+            "x": 90,
+            "y": -175,
+            "type": "cross"
+        },
+        {
+            "x": 90,
+            "y": -50,
+            "type": "cross"
+        },
+        {
+            "x": -160,
+            "y": 75,
+            "type": "cross"
+        },
+        {
+            "x": -35,
+            "y": 75,
+            "type": "cross"
+        },
+        {
+            "x": -160,
+            "y": -50,
+            "type": "uncross"
+        },
+        {
+            "x": 90,
+            "y": 75,
+            "type": "uncross"
+        }
+    ],
+    "hints": [],
+    "areas": [
+        {
+            "x": -126,
+            "y": -140,
+            "w": 181,
+            "h": 181,
+            "type": "touch"
+        },
+        {
+            "x": 91,
+            "y": 75,
+            "w": 0,
+            "h": 0,
+            "type": "touch"
+        },
+        {
+            "x": -36,
+            "y": -171,
+            "w": 0,
+            "h": 0,
+            "type": "touch"
+        },
+        {
+            "x": -159,
+            "y": -55,
+            "w": 8,
+            "h": 0,
+            "type": "touch"
+        }
+    ]
+}
