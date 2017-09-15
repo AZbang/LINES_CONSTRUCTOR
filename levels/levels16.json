@@ -4,13 +4,13 @@
     "steps": 3,
     "clicks": 50,
     "windows": {
-        "ru": [
+        "en": [
             {
                 "label": "LINES",
                 "text": "Сhoice. The problem is choice. — The Matrix"
             }
         ],
-        "en": [
+        "ru": [
             {
                 "label": "LINES",
                 "text": "Выбор. Вся проблема в выборе. — Матрица"
