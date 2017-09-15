@@ -1,0 +1,103 @@
+{
+    "label": "CIRCUITUS",
+    "intersections": 4,
+    "steps": 4,
+    "clicks": 150,
+    "windows": {
+        "ru": [
+            {
+                "label": "LINES",
+                "text": "Хорошее решение базируется на знании, а не на цифрах.  —  Платон"
+            }
+        ],
+        "en": [
+            {
+                "label": "LINES",
+                "text": "A good decision is based on knowledge and not on numbers.  —  Plato"
+            }
+        ]
+    },
+    "buttons": "RZ",
+    "objects": [
+        {
+            "x": 40,
+            "y": 0,
+            "type": "uncross"
+        },
+        {
+            "x": 140,
+            "y": -150,
+            "type": "cross"
+        },
+        {
+            "x": -110,
+            "y": -75,
+            "type": "cross"
+        },
+        {
+            "x": 190,
+            "y": 100,
+            "type": "cross"
+        },
+        {
+            "x": -35,
+            "y": 150,
+            "type": "cross"
+        }
+    ],
+    "hints": [
+        {
+            "x": 90,
+            "y": -100
+        },
+        {
+            "x": -60,
+            "y": -25
+        },
+        {
+            "x": 15,
+            "y": 100
+        },
+        {
+            "x": 140,
+            "y": 50
+        }
+    ],
+    "areas": [
+        {
+            "x": -84,
+            "y": -58,
+            "w": 56,
+            "h": 54,
+            "type": "touch"
+        },
+        {
+            "x": -21,
+            "y": 82,
+            "w": 0,
+            "h": 0,
+            "type": "touch"
+        },
+        {
+            "x": -22,
+            "y": 71,
+            "w": 52,
+            "h": 54,
+            "type": "touch"
+        },
+        {
+            "x": 107,
+            "y": 19,
+            "w": 61,
+            "h": 56,
+            "type": "touch"
+        },
+        {
+            "x": 60,
+            "y": -135,
+            "w": 59,
+            "h": 59,
+            "type": "touch"
+        }
+    ]
+}
